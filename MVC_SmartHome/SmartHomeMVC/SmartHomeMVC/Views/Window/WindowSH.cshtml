@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Window";
+    ViewBag.Header = "WINDOW";
+    Layout = "~/Views/_MasterPage.cshtml";
+}
+
+
+@using (Html.BeginForm("WindowSH", "Window", FormMethod.Post))
+{
+    <input type="text" name="gadgetName" class="form-control" placeholder="Введите имя устройства" value="@ViewBag.gadgetName" /> <br />
+    <p class="btnnav">
+        <button class="btn btn-primary" type="submit" name="command" value="Add">Add</button>
+        <button class="btn btn-warning" type="submit" name="command" value="Delete">Delete</button>
+        <button class="btn btn-success" type="submit" name="command" value="Open">Open</button>
+        <button class="btn btn-danger" type="submit" name="command" value="Close">Close</button>
+    </p>
+}
+<br />
+<div>
+    <h4>Текущие объекты "Окно":</h4>
+    <div>
+        @foreach (KeyValuePair<string, SmartHomeMVC.Models.Window> findObject in @ViewBag.AllGadgets)
+        {
+            <table class="form-control">
+                <tr>
+                    <td><p>Название: @findObject.Key &nbsp;</p></td>
+                    <td><p>Состояние: @ViewBag.AllGadgets[findObject.Key].ToString()</p></td>
+                </tr>
+            </table>
+        }
+    </div>
+</div>

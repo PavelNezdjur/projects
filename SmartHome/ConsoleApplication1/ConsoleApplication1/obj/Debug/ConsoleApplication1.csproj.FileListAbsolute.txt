@@ -1,0 +1,17 @@
+D:\Oracle\C#\самостоятельные работы\smartHome\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Oracle\C#\самостоятельные работы\smartHome\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Oracle\C#\самостоятельные работы\smartHome\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Oracle\C#\самостоятельные работы\smartHome\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Oracle\C#\самостоятельные работы\smartHome\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\Oracle\C#\самостоятельные работы\smartHome\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+d:\Oracle\C#\самостоятельные работы\SHCopy\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+d:\Oracle\C#\самостоятельные работы\SHCopy\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+d:\Oracle\C#\самостоятельные работы\SHCopy\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+d:\Oracle\C#\самостоятельные работы\SHCopy\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+d:\Oracle\C#\самостоятельные работы\SHCopy\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+d:\Oracle\C#\самостоятельные работы\Задание_Smart_home_without_Interfaces\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+d:\Oracle\C#\самостоятельные работы\Задание_Smart_home_without_Interfaces\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+d:\Oracle\C#\самостоятельные работы\Задание_Smart_home_without_Interfaces\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+d:\Oracle\C#\самостоятельные работы\Задание_Smart_home_without_Interfaces\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+d:\Oracle\C#\самостоятельные работы\Задание_Smart_home_without_Interfaces\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+d:\Oracle\C#\самостоятельные работы\Задание_Smart_home_without_Interfaces\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Калькулятор</title>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+			<link rel="stylesheet" href="style.css" />
+			<script src="script.js"></script>
+		</head>
+	<body>
+		<form name="calc">
+			<table class="tblCalc">
+				<tr>
+					<td colspan="5"><input id="editWide" name="resInput" value="" type="text"></td>
+				</tr>
+				<tr>
+					<td><input name="btnDegree2" type="button" value="x&sup2;" onclick="level2 ()" /></td>
+					<td><input name="btnDegree3" type="button" value="x&sup3;" onclick="level3 ()" /></td>
+					<td><input name="btnSqrt" type="button" value="&radic;x" onclick="sqrt()" /></td>
+					<td><input name="C" type="button" value="C" onclick="clearAll ()" /></td>
+					<td><input name="btnNeg" type="button"	value="Off" class="off" onclick="exit()" /></td>
+				</tr>
+				<tr>
+					<td><input name="btnSeven" type="button" value="7" class="cifr" onclick="pushNum (value)"></td>
+					<td><input name="btnEight" type="button" value="8" class="cifr" onclick="pushNum (value)"></td>
+					<td><input name="btnNine" type="button" value="9" class="cifr" onclick="pushNum (value)"></td>
+					<td><input name="btnPlus" type="button" value="+" onclick="plus ()" /></td>
+					<td><input name="btnMinus" type="button" value="-" onclick="minus ()" /></td>
+				</tr>
+			   <tr>
+					<td><input name="btnFour" type="button" value="4" class="cifr" onclick="pushNum (value)"></td>
+					<td><input name="btnFive" type="button" value="5" class="cifr" onclick="pushNum (value)"></td>
+					<td><input name="btnSix" type="button" value="6" class="cifr" onclick="pushNum (value)"></td>
+					<td><input name="btnMultiply" type="button" value="&times;" onclick="multiply ()" /></td>
+					<td align=middle><input name="btnDivide" type="button" value="&divide;" onclick="divide ()" /></td>
+			   </tr>
+			   <tr>
+					<td><input name="btnOne" type="button" value="1" class="cifr" onclick="pushNum (value)"></td>
+					<td><input name="btnTwo" type="button"	value="2" class="cifr" onclick="pushNum (value)"></td>
+					<td><input name="btnThree" type="button" value="3" class="cifr" onclick="pushNum (value)"></td>
+					<td><input name="btnPercent" type="button" value="%" title="Введите первое число, нажмите '&times;', введите второе число и нажмите '%'" onclick="percent ()" /></td>
+					<td><input name="btnNeg" type="button"	value="&plusmn;" onclick="neg ()" /></td>
+					<td align=middle>&nbsp;</td>
+			   </tr>
+			   <tr>
+					<td colspan="2"><input id="btnWide" name="btnZero" type="button" value="0" class="cifr" onclick="pushNum (value)"></td>
+					<td><input name="btnDecimal" type="button" value="." class="cifr" onclick="pushNum (value)"></td>
+					<td colspan="2"><input id="btnWide" name="btnEquals" type="button" value="=" onclick="calculate()"></td>
+			   </tr>
+			</table>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Freedge";
+    ViewBag.Header = "FREEDGE";
+    Layout = "~/Views/_MasterPage.cshtml";
+}
+
+@using (Html.BeginForm("FreedgeSH", "Freedge", FormMethod.Post))
+{
+    <input type="text" name="gadgetName" class="form-control" placeholder="Введите имя устройства" value="@ViewBag.gadgetName" /><br />
+    <p class="btnnav">
+        <button class="btn btn-primary" type="submit" name="command" value="Add">Add</button>
+        <button class="btn btn-warning" type="submit" name="command" value="Delete">Delete</button>
+        <button class="btn btn-success" type="submit" name="command" value="On">On</button>
+        <button class="btn btn-danger" type="submit" name="command" value="Off">Off</button>
+        <button class="btn btn-warning" type="submit" name="command" value="TemperatureUp">Temp +</button>
+        <button class="btn btn-info" type="submit" name="command" value="TemperatureDown">Temp -</button>
+    </p>
+}
+<br />
+<div>
+    <h4>Текущие объекты "Холодильник":</h4>
+    <div>
+        @foreach (KeyValuePair<string, SmartHomeMVC.Models.Freedge> findObject in @ViewBag.AllGadgets)
+        {
+            <table class="form-control">
+                <tr>
+                    <td><p>Название: @findObject.Key &nbsp;</p></td>
+                    <td><p>Состояние: @ViewBag.AllGadgets[findObject.Key].ToString() &nbsp;</p></td>
+                </tr>
+            </table>
+        }
+    </div>
+</div>

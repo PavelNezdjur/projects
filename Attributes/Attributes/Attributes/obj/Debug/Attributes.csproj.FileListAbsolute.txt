@@ -1,0 +1,5 @@
+D:\Oracle\C#\HomeWork\Attributes\Attributes\Attributes\bin\Debug\Attributes.exe.config
+D:\Oracle\C#\HomeWork\Attributes\Attributes\Attributes\bin\Debug\Attributes.exe
+D:\Oracle\C#\HomeWork\Attributes\Attributes\Attributes\bin\Debug\Attributes.pdb
+D:\Oracle\C#\HomeWork\Attributes\Attributes\Attributes\obj\Debug\Attributes.exe
+D:\Oracle\C#\HomeWork\Attributes\Attributes\Attributes\obj\Debug\Attributes.pdb

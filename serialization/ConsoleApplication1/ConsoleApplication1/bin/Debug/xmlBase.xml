@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee>
+    <Id>1</Id>
+    <Name>pavel</Name>
+    <Surname>nezdjur</Surname>
+    <Vocation>manager</Vocation>
+    <Salary>5000</Salary>
+    <Age>30</Age>
+  </Employee>
+  <Employee>
+    <Id>2</Id>
+    <Name>artem</Name>
+    <Surname>nezdjur</Surname>
+    <Vocation>manager</Vocation>
+    <Salary>5500</Salary>
+    <Age>25</Age>
+  </Employee>
+</ArrayOfEmployee>

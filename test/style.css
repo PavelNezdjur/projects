@@ -1,0 +1,54 @@
+body{
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 800px;
+	background-color: lightslategray;
+}
+header{
+text-align: center;
+}
+form{
+background-color: lavender;
+padding: 10px;
+border: 2px solid black;
+}
+div{
+text-align: left-side;
+padding-left: 200px;
+}
+section{
+border: 1px solid black;
+text-align:left-side;
+padding: 5px;
+}
+h2{
+text-shadow: 1px 1px 1px white;
+}
+h3{
+text-align:justify;
+margin-top: 15px;
+margin-bottom: 5px;
+padding-left: 30px;
+}
+h4{
+text-align: left-side;
+padding-left: 150px;
+margin-top: 15px;
+margin-bottom: 5px;
+}
+#solution{
+border: 2px solid black;
+text-align: center;
+padding-bottom: 30px;
+background-color: lightgrey;
+font-size: 20px;
+}
+#display{
+height: 30px;
+width: 100px;
+}
+
+
+	
+	
+ 	

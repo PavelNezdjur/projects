@@ -1,0 +1,11 @@
+D:\Oracle\WinForm\HomeWork\SmartHome\SmartHomeWebForm\WebApplication1\bin\WebApplication1.dll.config
+D:\Oracle\WinForm\HomeWork\SmartHome\SmartHomeWebForm\WebApplication1\bin\WebApplication1.dll
+D:\Oracle\WinForm\HomeWork\SmartHome\SmartHomeWebForm\WebApplication1\bin\WebApplication1.pdb
+D:\Oracle\WinForm\HomeWork\SmartHome\SmartHomeWebForm\WebApplication1\obj\Debug\WebApplication1.dll
+D:\Oracle\WinForm\HomeWork\SmartHome\SmartHomeWebForm\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Oracle\WinForm\HomeWork\SmartHome\SmartHomeWebForm\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+d:\Oracle\WinForm\HomeWork\SmartHome\forSentToMax\WebApplication1\obj\Debug\WebApplication1.dll
+d:\Oracle\WinForm\HomeWork\SmartHome\forSentToMax\WebApplication1\bin\WebApplication1.dll.config
+d:\Oracle\WinForm\HomeWork\SmartHome\forSentToMax\WebApplication1\bin\WebApplication1.dll
+d:\Oracle\WinForm\HomeWork\SmartHome\forSentToMax\WebApplication1\bin\WebApplication1.pdb
+d:\Oracle\WinForm\HomeWork\SmartHome\forSentToMax\WebApplication1\obj\Debug\WebApplication1.pdb
