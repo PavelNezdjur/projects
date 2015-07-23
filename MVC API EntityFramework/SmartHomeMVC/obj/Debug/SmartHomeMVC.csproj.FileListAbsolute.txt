@@ -1,0 +1,110 @@
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\SmartHomeMVC.dll.config
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\SmartHomeMVC.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\SmartHomeMVC.pdb
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\Newtonsoft.Json.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Net.Http.Formatting.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Helpers.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Http.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Http.WebHost.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Mvc.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Razor.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.Deployment.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.Razor.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Razor.xml
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.xml
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.Deployment.xml
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.Razor.xml
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Helpers.xml
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Mvc.xml
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\Newtonsoft.Json.xml
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Net.Http.Formatting.xml
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Http.xml
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Http.WebHost.xml
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\obj\Debug\SmartHomeMVC.dll
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\obj\Debug\SmartHomeMVC.pdb
+D:\Oracle\WinForm\HomeWork\MVC\new\SmartHomeMVC\SmartHomeMVC\obj\Debug\SmartHomeMVC.csprojResolveAssemblyReference.cache
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\SmartHomeMVC.dll.config
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\SmartHomeMVC.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\SmartHomeMVC.pdb
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\Newtonsoft.Json.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Net.Http.Formatting.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Helpers.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Http.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Http.WebHost.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Mvc.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Razor.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.Deployment.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.Razor.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Razor.xml
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.xml
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.Deployment.xml
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Webpages.Razor.xml
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Helpers.xml
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Mvc.xml
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\Newtonsoft.Json.xml
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Net.Http.Formatting.xml
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Http.xml
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\bin\System.Web.Http.WebHost.xml
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\obj\Debug\SmartHomeMVC.dll
+D:\Oracle\WinForm\HomeWork\MVC\else\SmartHomeMVC\SmartHomeMVC\obj\Debug\SmartHomeMVC.pdb
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\SmartHomeMVC.dll.config
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\SmartHomeMVC.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\SmartHomeMVC.pdb
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\EntityFramework.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\EntityFramework.SqlServer.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\Newtonsoft.Json.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Net.Http.Formatting.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Helpers.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Http.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Http.WebHost.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Mvc.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Razor.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Webpages.Deployment.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Webpages.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Webpages.Razor.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\EntityFramework.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\EntityFramework.SqlServer.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Razor.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Webpages.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Webpages.Deployment.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Webpages.Razor.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Helpers.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Mvc.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\Newtonsoft.Json.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Net.Http.Formatting.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Http.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\bin\System.Web.Http.WebHost.xml
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\obj\Debug\SmartHomeMVC.csprojResolveAssemblyReference.cache
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\obj\Debug\SmartHomeMVC.dll
+d:\Oracle\WinForm\HomeWork\WebAPI\else\SmartHomeMVC\obj\Debug\SmartHomeMVC.pdb
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\SmartHomeMVC.dll.config
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\SmartHomeMVC.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\SmartHomeMVC.pdb
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\EntityFramework.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\EntityFramework.SqlServer.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\Newtonsoft.Json.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Net.Http.Formatting.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Helpers.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Http.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Http.WebHost.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Mvc.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Razor.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Webpages.Deployment.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Webpages.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Webpages.Razor.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\EntityFramework.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\EntityFramework.SqlServer.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Razor.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Webpages.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Webpages.Deployment.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Webpages.Razor.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Helpers.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Mvc.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\Newtonsoft.Json.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Net.Http.Formatting.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Http.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\bin\System.Web.Http.WebHost.xml
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\obj\Debug\SmartHomeMVC.dll
+d:\Oracle\WinForm\HomeWork\последнее 21_07_2015_вечер\MVC_API_bd\SmartHomeMVC\obj\Debug\SmartHomeMVC.pdb

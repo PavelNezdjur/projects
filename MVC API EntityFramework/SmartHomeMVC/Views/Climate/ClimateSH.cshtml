@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Climate";
+    ViewBag.Header = "CLIMATE";
+    Layout = "~/Views/_MasterPage.cshtml";
+}
+
+<div>
+    <a href="/Climate/ClimateCreate"><b>Добавить новое устройство</b></a>
+</div>
+<br />
+<div>
+    <h4>Текущие объекты "Кондиционер":</h4>
+    <div>
+        @foreach (var A in @ViewBag.Climates)
+        {
+            string onOff;
+            string vision;
+            if (A.Condition == true)
+            {
+                onOff = "Включен";
+                vision = "visionOn";
+            }
+            else { onOff = "Выключен"; vision = "visionOff"; }
+            <table class="table table-bordered table-striped text-center">
+                <tr>
+                    <td><p>Название &nbsp;</p></td>
+                    <td><p>Состояние &nbsp;</p></td>
+                    <td><p>Температура &nbsp;</p></td>
+                    <td><p>Настройка &nbsp;</p></td>
+                    <td><p>Удаление</p></td>
+                </tr>
+                <tr>
+                    <td><p>@A.title &nbsp;</p></td>
+                    <td><p>@onOff &nbsp;</p></td>
+                    <td><p class="@vision">@A.temperature &nbsp;</p></td>
+                    <td><p><a href="/Climate/ClimateEditPartial/@A.Id"><b>Настроить&nbsp;</b></a></p></td>
+                    <td><p><a href="/Climate/ClimateDelete/@A.Id"><b>Удалить</b></a></p></td>
+                </tr>
+            </table>
+        }
+    </div>
+</div>

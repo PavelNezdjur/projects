@@ -1,0 +1,21 @@
+﻿@model SmartHomeMVC.Models.Freedge
+
+<h4>Новое устройство</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.title, "Название")
+    <br />
+    @Html.EditorFor(model => model.title)
+    <br /><br />
+    @Html.LabelFor(model => model.Condition, "Включить")
+    <br />
+    @Html.EditorFor(model => model.Condition)
+    <br /><br />
+    @Html.LabelFor(model => model.temperature, "Установить температуру внутри холодильника")
+    <br />
+    @Html.EditorFor(model => model.temperature)
+    <br /><br />
+    <input type="submit" value="Добавить" />
+}
+

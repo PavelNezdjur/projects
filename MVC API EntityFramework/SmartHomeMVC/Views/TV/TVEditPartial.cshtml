@@ -1,0 +1,29 @@
+﻿@model SmartHomeMVC.Models.TV
+
+@using (Html.BeginForm("TVEditPartial", "TV", FormMethod.Post))
+{
+    <fieldset>
+        @Html.HiddenFor(m => m.Id)
+        <p>
+            @Html.LabelFor(m => m.title, "Название")
+            <br />
+            @Html.EditorFor(m => m.title)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Condition, "Включить")
+            <br />
+            @Html.EditorFor(m => m.Condition)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.channel, "Установить канал")
+            <br />
+            @Html.EditorFor(m => m.channel)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.volume, "Установить громкость")
+            <br />
+            @Html.EditorFor(m => m.volume)
+        </p>
+        <p><input type="submit" value="Отправить" /></p>
+    </fieldset>
+}

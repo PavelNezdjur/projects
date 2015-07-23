@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "TV";
+    ViewBag.Header = "TV";
+    Layout = "~/Views/_MasterPage.cshtml";
+}
+<div class="text-right">
+    @Html.ActionLink("Версия Web API", "TVAPI", "TV")
+</div>
+<br />
+<div>
+    <a href="/TV/TVCreate"><b>Добавить новое устройство</b></a>
+</div>
+<br />
+<div>
+    <h4>Текущие объекты "TV":</h4>
+    <div>
+        @foreach (var A in @ViewBag.TVs)
+        {
+            string onOff;
+            string vision;
+            if (A.Condition == true)
+            {
+                onOff = "Вкл";
+                vision = "visionOn";
+            }
+            else { onOff = "Выкл"; vision = "visionOff"; }
+            <table class="table table-bordered table-striped text-center">
+                <tr>
+                    <td><p>Название &nbsp;</p></td>
+                    <td><p>Состояние &nbsp;</p></td>
+                    <td><p>Канал &nbsp;</p></td>
+                    <td><p>Громкость &nbsp;</p></td>
+                    <td><p>Настройка &nbsp;</p></td>
+                    <td><p>Удаление</p></td>
+                </tr>
+                <tr>
+                    <td><p>@A.title &nbsp;</p></td>
+                    <td><p>@onOff &nbsp;</p></td>
+                    <td><p class="@vision">@A.channel &nbsp;</p></td>
+                    <td><p class="@vision">@A.volume &nbsp;</p></td>
+                    <td><p><a href="/TV/TVEditPartial/@A.Id"><b>Настроить&nbsp;</b></a></p></td>
+                    <td><p><a href="/TV/TVDelete/@A.Id"><b>Удалить</b></a></p></td>
+                </tr>
+            </table>
+        }
+    </div>
+</div>

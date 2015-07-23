@@ -1,0 +1,218 @@
+﻿@{
+    ViewBag.Title = "WindowAPI";
+    ViewBag.Header = "WINDOW API DataBase";
+    Layout = "~/Views/_MasterPage.cshtml";
+}
+
+<div id="tableBlock"></div>
+<div id="editBlock">
+    <p><b>Настройки</b></p>
+    <table>
+        <tr>
+            <td>
+                <input type="hidden" id="editId" />
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Название: </label>
+            </td>
+            <td>
+                <input type="text" id="editTitle" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Состояние: </label>
+            </td>
+            <td>
+                <input type="text" id="editCondition" />
+            </td>
+        </tr>
+    </table>
+    <button id="editWindow">Применить</button>
+</div>
+<div id="createBlock">
+    <p><b>Добавить устройство</b></p>
+    <table>
+        <tr>
+            <td>
+                <label>Название: </label>
+            </td>
+            <td>
+                <input type="text" id="addTitle" />
+            </td>
+        </tr>
+    </table>
+    <br />
+    <button id="addWindow">Применить</button>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        GetAllWindows();
+
+        $("#editWindow").click(function (event) {
+            event.preventDefault();
+            EditWindow();
+        });
+        $("#addWindow").click(function (event) {
+            event.preventDefault();
+            AddWindow();
+        });
+
+    });
+
+    // Список всех устройств
+    function GetAllWindows() {
+
+        $("#createBlock").css('display', 'block');
+        $("#editBlock").css('display', 'none');
+        $.ajax({
+            url: '/api/Windowapi/',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                ShowResult(data);
+            },
+        });
+    }
+
+    // Добавление нового устройства
+    function AddWindow() {
+        // получаем имя и состояние
+        var Window = {
+            Title: $('#addTitle').val(),
+        };
+        if ($('#addTitle').val() == "") {
+            alert("Введите имя устройства!")
+        }
+        else {
+            $.ajax({
+                url: '/api/Windowapi/',
+                type: 'POST',
+                data: JSON.stringify(Window),
+                contentType: "application/json;charset=utf-8",
+                success: function (data) {
+                    GetAllWindows();
+                },
+            });
+        }
+    }
+
+    // Удаление устройства
+    function DeleteWindow(id) {
+
+        $.ajax({
+            url: '/api/Windowapi/' + id,
+            type: 'DELETE',
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                GetAllWindows();
+            },
+        });
+    }
+
+    // Настройка устройства
+    function EditWindow() {
+        var id = $('#editId').val()
+        var conditionInputed;
+        if ($('#editCondition').val() == 'True') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == 'true') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == 'Открыть') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == 'открыть') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == '1') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == 'Open') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == 'open') {
+            conditionInputed = true;
+        }
+        else (conditionInputed = false)
+        // получаем новые значения
+        var Window = {
+            Id: $('#editId').val(),
+            title: $('#editTitle').val(),
+            Condition: conditionInputed,
+        };
+        $.ajax({
+            url: '/api/Windowapi/' + id,
+            type: 'PUT',
+            data: JSON.stringify(Window),
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                GetAllWindows();
+            },
+        });
+    }
+
+    // вывод полученных данных на экран
+    function ShowResult(Windows) {
+        var onOff;
+        var strResult = "<table class='table table-bordered'><th>ID</th><th>Название </th><th>Состояние </th><th>Настройки </th><th>Удаление </th>";
+        $.each(Windows, function (index, Window) {
+            if (Window.Condition == false) {
+                onOff = "Закрыто";
+            }
+            else {
+                onOff = "Открыто";
+            }
+            strResult += "<tr><td>" + Window.Id + "</td><td> " + Window.title + "</td><td>" + onOff + "</td></td><td><a id='editItem' data-item='" + Window.Id + "' onclick='EditItem(this);' >Настроить</a></td>" +
+            "<td><a id='delItem' data-item='" + Window.Id + "' onclick='DeleteItem(this);' >Удалить</a></td></tr>";
+        });
+        strResult += "</table>";
+        $("#tableBlock").html(strResult);
+
+    }
+
+    // обработчик удаления
+    function DeleteItem(el) {
+        // получаем id удаляемого объекта
+        var id = $(el).attr('data-item');
+        DeleteWindow(id);
+    }
+
+    // обработчик редактирования
+    function EditItem(el) {
+        // получаем id редактируемого объекта
+        var id = $(el).attr('data-item');
+        GetWindow(id);
+    }
+
+    // вывод текущих настроек устройства в поля для редактирования
+    function ShowWindow(Window) {
+        if (Window != null) {
+            $("#createBlock").css('display', 'none');
+            $("#editBlock").css('display', 'block');
+            $("#editId").val(Window.Id);
+            $("#editTitle").val(Window.Title);
+        }
+        else {
+            alert("Устройство не найдено");
+        }
+    }
+
+    // поиск устройства для редактирования
+    function GetWindow(id) {
+        $.ajax({
+            url: '/api/Windowapi/' + id,
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                ShowWindow(data);
+            },
+        });
+    }
+</script>

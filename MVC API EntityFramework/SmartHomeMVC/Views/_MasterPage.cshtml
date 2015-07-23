@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/bootstrap-theme.css" />
+    <link rel="stylesheet" href="~/Style.css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="header">@ViewBag.Header</div>
+        <div class="row" id="content">
+            <ul id="navigation" class="nav nav-pills">
+                <li class="button">@Html.ActionLink("Сигнализация", "AlarmSH", "Alarm")</li>
+                <li class="button">@Html.ActionLink("Кондиционер", "ClimateSH", "Climate")</li>
+                <li class="button">@Html.ActionLink("Холодильник", "FreedgeSH", "Freedge")</li>
+                <li class="button">@Html.ActionLink("Лампа", "LampSH", "Lamp")</li>
+                <li class="button">@Html.ActionLink("Телевизор", "TVSH", "TV")</li>
+                <li class="button">@Html.ActionLink("Окно", "WindowSH", "Window")</li>
+            </ul>
+        </div><br />
+        <div>
+            @RenderBody()
+        </div>
+        <label>@ViewBag.Error</label>
+    </div>
+    <div class="row" id="footer">
+        <a href="/SmartHome/Index" /><img src="~/house-min.png" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+﻿@{
+    ViewBag.Title = "TV";
+    ViewBag.Header = "TV API";
+    Layout = "~/Views/_MasterPage.cshtml";
+}
+
+<div id="tableBlock"></div>
+<div id="editBlock">
+    <p><b>Настройки</b></p>
+    <table>
+        <tr>
+            <td>
+                <input type="hidden" id="editId" />
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Название: </label>
+            </td>
+            <td>
+                <input type="text" id="editTitle" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Состояние: </label>
+            </td>
+            <td>
+                <input type="text" id="editCondition" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Канал: </label>
+            </td>
+            <td>
+                <input type="text" id="editChannel" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Громкость: </label>
+            </td>
+            <td>
+                <input type="number" id="editVolume" />
+            </td>
+        </tr>
+    </table>
+    <button id="editTV">Применить</button>
+</div>
+<div id="createBlock">
+    <p><b>Добавить устройство</b></p>
+    <table>
+        <tr>
+            <td>
+                <label>Название: </label>
+            </td>
+            <td>
+                <input type="text" id="addTitle" />
+            </td>
+        </tr>
+    </table>
+    <br />
+    <button id="addTV">Применить</button>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        GetAllTVs();
+
+        $("#editTV").click(function (event) {
+            event.preventDefault();
+            EditTV();
+        });
+        $("#addTV").click(function (event) {
+            event.preventDefault();
+            AddTV();
+        });
+
+    });
+
+    // Список всех устройств
+    function GetAllTVs() {
+
+        $("#createBlock").css('display', 'block');
+        $("#editBlock").css('display', 'none');
+        $.ajax({
+            url: '/api/tvapi/',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                ShowResult(data);
+            },
+        });
+    }
+
+    // Добавление нового устройства
+    function AddTV() {
+        // получаем имя и состояние
+        var TV = {
+            Title: $('#addTitle').val(),
+        };
+        if ($('#addTitle').val() == "") {
+            alert("Введите имя устройства!")
+        }
+        else {
+            $.ajax({
+                url: '/api/tvapi/',
+                type: 'POST',
+                data: JSON.stringify(TV),
+                contentType: "application/json;charset=utf-8",
+                success: function (data) {
+                    GetAllTVs();
+                },
+            });
+        }
+    }
+
+    // Удаление устройства
+    function DeleteTV(id) {
+
+        $.ajax({
+            url: '/api/tvapi/' + id,
+            type: 'DELETE',
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                GetAllTVs();
+            },
+        });
+    }
+
+    // Настройка устройства
+    function EditTV() {
+        var id = $('#editId').val()
+        var conditionInputed;
+        if ($('#editCondition').val() == 'True') {
+            conditionInputed = 'true';
+        }
+        else if ($('#editCondition').val() == 'true') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == 'Вкл') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == 'вкл') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == '1') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == 'On') {
+            conditionInputed = true;
+        }
+        else if ($('#editCondition').val() == 'on') {
+            conditionInputed = true;
+        }
+        else (conditionInputed = false)
+
+        // получаем новые значения
+        var TV = {
+            Id: $('#editId').val(),
+            title: $('#editTitle').val(),
+            Condition: conditionInputed,
+            channel: $('#editChannel').val(),
+            volume: $('#editVolume').val(),
+        };
+        $.ajax({
+            url: '/api/tvapi/' + id,
+            type: 'PUT',
+            data: JSON.stringify(TV),
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                GetAllTVs();
+            },
+        });
+    }
+
+    // вывод полученных данных на экран
+    function ShowResult(TVs) {
+        var onOff;
+        var vision;
+        var strResult = "<table class='table table-bordered'><th>ID</th><th>Название </th><th>Состояние </th><th>Канал </th><th>Громкость </th><th>Настройки </th><th>Удаление </th>";
+        $.each(TVs, function (index, TV) {
+            if (TV.Condition == false) {
+                onOff = "Выкл";
+                vision = "visionOff";
+            }
+            else {
+                onOff = "Вкл";
+                vision = "visionOn";
+            }
+            strResult += "<tr><td>" + TV.Id + "</td><td> " + TV.title + "</td><td>" + onOff + "</td><td class= '" + vision + "'>" + TV.channel + "</td><td class= '" + vision + "'>" + TV.volume +
+            "</td><td><a id='editItem' data-item='" + TV.Id + "' onclick='EditItem(this);' >Настроить</a></td>" +
+            "<td><a id='delItem' data-item='" + TV.Id + "' onclick='DeleteItem(this);' >Удалить</a></td></tr>";
+        });
+        strResult += "</table>";
+        $("#tableBlock").html(strResult);
+
+    }
+
+    // обработчик удаления
+    function DeleteItem(el) {
+        // получаем id удаляемого объекта
+        var id = $(el).attr('data-item');
+        DeleteTV(id);
+    }
+
+    // обработчик редактирования
+    function EditItem(el) {
+        // получаем id редактируемого объекта
+        var id = $(el).attr('data-item');
+        GetTV(id);
+    }
+
+    // вывод текущих настроек устройства в поля для редактирования
+    function ShowTV(TV) {
+        if (TV != null) {
+            $("#createBlock").css('display', 'none');
+            $("#editBlock").css('display', 'block');
+            $("#editId").val(TV.Id);
+            $("#editTitle").val(TV.Title);
+            $("#editChannel").val(TV.Channel);
+            $("#editVolume").val(TV.Volume);
+        }
+        else {
+            alert("Устройство не найдено");
+        }
+    }
+
+    // поиск устройства для редактирования
+    function GetTV(id) {
+        $.ajax({
+            url: '/api/tvapi/' + id,
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                ShowTV(data);
+            },
+        });
+    }
+</script>

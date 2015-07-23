@@ -1,0 +1,24 @@
+﻿@model SmartHomeMVC.Models.TV
+
+<h4>Новое устройство</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.title, "Название")
+    <br />
+    @Html.EditorFor(model => model.title)
+    <br /><br />
+    @Html.LabelFor(model => model.Condition, "Включить")
+    <br />
+    @Html.EditorFor(model => model.Condition)
+    <br /><br />
+    @Html.LabelFor(model => model.channel, "Канал")
+    <br />
+    @Html.EditorFor(model => model.channel)
+    <br /><br />
+    @Html.LabelFor(model => model.volume, "Громкость")
+    <br />
+    @Html.EditorFor(model => model.volume)
+    <br /><br />
+    <input type="submit" value="Добавить" />
+}

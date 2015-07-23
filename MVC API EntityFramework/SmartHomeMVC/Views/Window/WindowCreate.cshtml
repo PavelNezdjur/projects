@@ -1,0 +1,16 @@
+﻿@model SmartHomeMVC.Models.Window
+
+<h4>Новое устройство</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.title, "Название")
+    <br />
+    @Html.EditorFor(model => model.title)
+    <br /><br />
+    @Html.LabelFor(model => model.Condition, "Открыть")
+    <br />
+    @Html.EditorFor(model => model.Condition)
+    <br /><br />
+    <input type="submit" value="Добавить" />
+}

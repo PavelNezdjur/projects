@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Window";
+    ViewBag.Header = "WINDOW";
+    Layout = "~/Views/_MasterPage.cshtml";
+}
+
+<div class="text-right">
+    @Html.ActionLink("Версия Web API", "WindowAPI", "Window")
+</div>
+<br />
+<div>
+    <a href="/Window/WindowCreate"><b>Добавить новое устройство</b></a>
+</div>
+<br />
+<div>
+    <h4>Текущие объекты "Окно":</h4>
+    <div>
+        @foreach (var A in @ViewBag.Windows)
+        {
+            string onOff;
+            if (A.Condition == true)
+            {
+                onOff = "Окно открыто";
+            }
+            else { onOff = "Окно закрыто"; }
+            <table class="table table-bordered table-striped text-center">
+                <tr>
+                    <td><p>Название &nbsp;</p></td>
+                    <td><p>Состояние &nbsp;</p></td>
+                    <td><p>Настройка &nbsp;</p></td>
+                    <td><p>Удаление</p></td>
+                </tr>
+                <tr>
+                    <td><p>@A.title &nbsp;</p></td>
+                    <td><p>@onOff &nbsp;</p></td>
+                    <td><p><a href="/Window/WindowEditPartial/@A.Id"><b>Настроить&nbsp;</b></a></p></td>
+                    <td><p><a href="/Window/WindowDelete/@A.Id"><b>Удалить</b></a></p></td>
+                </tr>
+            </table>
+        }
+    </div>
+</div>

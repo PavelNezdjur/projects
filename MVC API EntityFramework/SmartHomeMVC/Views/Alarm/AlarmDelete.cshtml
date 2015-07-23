@@ -1,0 +1,15 @@
+﻿@model SmartHomeMVC.Models.Alarm
+<h4>Удаление устройства</h4>
+<dl>
+    <dt>Название</dt>
+    <dd>
+        @Html.DisplayFor(model => model.title)
+    </dd>
+</dl>
+
+<p>Для удаления данного устройства нажмите кнопку "Удалить"</p>
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Удалить" />
+}
